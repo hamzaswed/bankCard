@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *css files -->
+    <link rel="stylesheet" href="css folder/bank.css">
+    <!-- icons file -->
+    <link rel="stylesheet" href="css folder/all.min.css"
+    <!-- *google fonts -->
+    <!-- for normal text "font-family: 'Averia Serif Libre', cursive;"-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- for numbers  "font-family: 'Iceland', cursive;"-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Iceland&display=swap" rel="stylesheet">
+    <title>Bank</title>
+</head>
+<body class="">
+    <div class="header">
+    <div class="container">
+        <div class="add">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <p><span>+</span> add new</p>
+    </div>
+    </div>
+    <div class="bank">
+    <div class="container">
+        <div class="card">
+            <div class="front-face">
+                <div class="front-header">
+                    <div class="logo">
+                        <img src="images/logo4.png" alt="">
+                        <p><span>Ziraat</span> Bankası</p>
+                    </div>
+                    <h3>bankkart</h3>
+                </div>
+                <div class="front-leanding">
+                    <div class="left">
+                        <i class="fas fa-caret-left"></i>
+                        <div class="check">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="front-number">
+                    <h3 id="frontNumber">---- ---- ---- ----</h3>
+                </div>
+                <div class="front-bottom">
+                    <div class="name" id="name">---- ----</div>
+                    <div class="date">
+                        <h3 id="date">-- / --</h3>
+                        <div class="visa">
+                            <h3>VISA</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back-face">
+                <div class="back-header">
+                    <div class="claint">
+                        <p>müşteri iletişim merkezi</p>
+                        <div class="number">
+                            <i class="fas fa-phone-square-alt"></i>
+                            <p>0 850 258 00 00</p>
+                        </div>
+                    </div>
+                    <div class="gmail">
+                        <p>www.ziraatbank.com.tr</p>
+                    </div>
+                </div>
+                <div class="white-space"></div>
+                <div class="bank-info">
+                    <p>Bu kartın mülkiyeti T.C. Ziraat Bankası A.Ş.'ye aittir</p>
+                    <p>This card remains to property of T.C Ziraat Bankası A.Ş. Narlıere Caddesi NO:55 34840 Maltepe/Istanbul</p>
+                </div>
+                <div class="cvc">
+                    <div class="cvc-number">
+                        <div class="white-space"></div>
+                        <p id="cvc">---</p>
+                    </div>
+                    <div class="cvc-info">
+                        <i class="fas fa-caret-left"></i>
+                        <p>Banka Kartı CVC</p>
+                    </div>
+                </div>
+                <div class="back-bottom">
+                    <div class="title">
+                        <p>bankkart</p>
+                    </div>
+                    <div class="icon">
+                        <div class="i">
+                            <i class="fas fa-globe-americas"></i>
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <div class="icon-info">
+                            <p>debit | credit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card-face">
+    <div class="container">
+        <button id="turnBut"><i class="fas fa-redo-alt"></i></button>
+    </div>
+    </div>
+    <div class="card-info">
+    <div class="person-info">
+        <div class="theme-section">
+            <div class="container">
+                <div data-color="red" class="theme"></div>
+                <div data-color="yellow" class="theme"></div>
+                <div data-color="gray" class="theme"></div>
+                <div data-color="green" class="theme"></div>
+                <div data-color="blue" class="theme"></div>
+            </div>
+        </div>
+        <div class="input-section">
+            <div class="container">
+                <input type="text" placeholder="Your Name"  maxlength="14">
+                <input type="tel" placeholder="Card Number" max="16" >
+                <div class="last-date">
+                    <input name="credit-expires" class="cc-expires" type="tel" pattern="\d*" placeholder="MM / YY">
+                    <input type="number" placeholder="CVC" maxlength="3">
+                </div>
+                <button id="nextBut">NEXT</button>
+            </div>
+        </div>
+    </div>
+    <div class="person-control">
+        <div class="container">
+            <div class="userInfo">
+                <div>Person Information</div>
+                <div>
+                    <h3>NAME :</h3>
+                    <h3 id="userName"></h3>
+                </div>
+                <div>
+                    <h3>CARD NO :</h3>
+                    <h3 id="cardNo"></h3>
+                </div>
+                <div>
+                    <h3>EXPIRY :</h3>
+                    <h3 id="expiry"></h3>
+                </div>
+                <div>
+                    <h3>CVC NO :</h3>
+                    <h3 id="CvC"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
